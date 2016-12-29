@@ -5,6 +5,7 @@
 .site-header{
     
     text-align: center;    
+    padding: 20px;
 
     .wrapper{
         
@@ -23,8 +24,6 @@
         height: 200px;
         width: 200px;
         display: inline-block;
-        overflow: hidden;
-        transition: $anim-speed; 
         @extend .z-depth-1;
         
         
