@@ -1,0 +1,35 @@
+/*------------------------------------------------------------
+  Links
+------------------------------------------------------------*/
+a {
+    color: #2a92ea;
+}
+
+.navigation{
+
+    .social-link{
+        margin: 5px;
+        text-decoration: none;
+        position: relative;
+	border: 1px #fff solid;
+	border-radius: 50%;
+	padding: 8px 6px 6px 8px;
+    }
+
+    .menu{
+        margin: 5px;
+        text-decoration: none;
+        position: relative;
+        display: inline-block;
+	border: 1px #fff solid;
+	border-radius: 20px;
+	width: 50px;
+    }
+
+    .navigation-item{
+        fill: #FFFFFF;
+        text-align: center;
+        color: #FFFFFF;
+        margin: 7px auto;
+    }
+}
