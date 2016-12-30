@@ -23,7 +23,6 @@ a {
         display: inline-block;
 	border: 1px #fff solid;
 	border-radius: 20px;
-	width: 50px;
     }
 
     .navigation-item{
@@ -31,5 +30,7 @@ a {
         text-align: center;
         color: #FFFFFF;
         margin: 7px auto;
+	padding-right: 10px;
+	padding-left: 10px;
     }
 }
