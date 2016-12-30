@@ -1,17 +1,21 @@
 <div class="navigation">
 
+    <div class="navigation-row">
 	<a class="menu" data-title="Blog" href="{{ site.url }}/blog">
-	    <p class="navigation-item">Blog</p>
+	    <p class="menu-item">Blog</p>
 	</a>
 
 	<a class="menu" data-title="Projects" href="{{ site.url }}/projects">
-	    <p class="navigation-item">Projects</p>
+	    <p class="menu-item">Projects</p>
 	</a>
 
 	<a class="menu" data-title="Career" href="{{ site.url }}/career">
-	    <p class="navigation-item">Career</p>
+	    <p class="menu-item">Career</p>
 	</a>
 
+    </div>
+    
+    <div class="navigation-row">
     {% if site.facebook %}
         <a class="social-link" data-title="facebook.com/{{ site.facebook }}" href="http://facebook.com/{{ site.facebook }}" target="_blank">
             <svg class="icon icon-facebook"><use xlink:href="#icon-facebook"></use></svg>
@@ -106,5 +110,6 @@
         <a class="social-link" href="{{ site.url }}/feed.xml" target="_blank">
 	    <svg class="icon icon-rss"><use xlink:href="#icon-rss"></use></svg>
 	</a>
+    </div>
 
 </div>

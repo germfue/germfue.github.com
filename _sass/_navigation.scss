@@ -25,12 +25,16 @@ a {
 	border-radius: 20px;
     }
 
-    .navigation-item{
+    .menu-item{
         fill: #FFFFFF;
         text-align: center;
         color: #FFFFFF;
         margin: 7px auto;
 	padding-right: 10px;
 	padding-left: 10px;
+    }
+
+    .navigation-row{
+	padding-bottom: 10px;
     }
 }
