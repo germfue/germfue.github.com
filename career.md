@@ -25,14 +25,15 @@ My last discovery, in 2011, was the payment services industry. This market is he
     {% if post.layout == "career" %}
   <div class="posts card">
       <div class="card-content white-text">
-          <span class="card-title">
+          <div class="card-title company-header">
               <div class="company-name">{{ post.title }}</div>
               <div class="company-logo">
                 <a data-title="{{ post.title }}" href="{{ post.company_site}}" target="_blank">
                   <svg class="career-logo"><use xlink:href="#{{ post.logo }}"></use></svg>
                 </a>
               </div>
-          </span>
+              <!-- div style="clear:both;" -->
+          </div>
 
           <div class="post-content">
             {{ post.content }}
