@@ -1,7 +1,47 @@
 ---
-layout: page
+layout: default
 title: Career
 permalink: /career/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
+<div class="home">
+
+  <div class="posts card">
+      <div class="card-content white-text">
+          <span class="card-title">Summary</span>
+
+          <div class="post-content">
+<p>
+Always ready to face new challenges, I had to deal all over my career with quite different projects, from pure consulting, to datawarehousing, web development in Python and Java and now E-commerce.
+</p><p>
+My last discovery, in 2011, was the payment services industry. This market is heavily influenced by the enormous number of players, each one with a different perspective on how systems should communicate, which standards they should follow and which workflows should guide shoppers and merchants through the checkout process.
+</p>
+          </div>
+
+      </div>
+   </div>
+
+{% for post in site.posts %}
+    {% if post.layout == "career" %}
+  <div class="posts card">
+      <div class="card-content white-text">
+          <span class="card-title">
+              <div class="company-name">{{ post.title }}</div>
+              <div class="company-logo">
+                <a data-title="{{ post.title }}" href="{{ post.company_site}}" target="_blank">
+                  <svg class="career-logo"><use xlink:href="#{{ post.logo }}"></use></svg>
+                </a>
+              </div>
+          </span>
+
+          <div class="post-content">
+            {{ post.content }}
+          </div>
+
+      </div>
+   </div>
+
+    {% endif %}
+{% endfor %}
+
+</div>

@@ -1,0 +1,8 @@
+---
+layout: career
+title: Tecsidel
+company_site: https://www.tecsidel.com
+logo: icon-tecsidel
+---
+
+here I describe what I did at Tecsidel

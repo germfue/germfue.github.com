@@ -1,0 +1,27 @@
+---
+layout: default
+---
+
+<div class="home">
+
+  <div class="posts card">
+      <div class="card-content white-text">
+          <span class="card-title">
+              <div class="company-name">{{ page.title }}</div>
+              <div class="company-logo">
+                  <a data-title="{{ page.title }}" href="{{ page.company_site }}" target="_blank">
+                      <svg class="career-logo">
+                          <use xlink:href="#{{ page.logo }}"></use>
+                      </svg>
+                </a>
+              </div>
+          </span>
+
+          <div class="post-content">
+            {{ content }}
+          </div>
+
+      </div>
+   </div>
+
+</div>
