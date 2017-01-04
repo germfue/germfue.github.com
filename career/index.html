@@ -29,14 +29,27 @@ My last discovery, in 2011, was the payment services industry. This market is he
               <div class="company-name">{{ post.title }}</div>
               <div class="company-logo">
                 <a data-title="{{ post.title }}" href="{{ post.company_site}}" target="_blank">
-                  <svg class="career-logo"><use xlink:href="#{{ post.logo }}"></use></svg>
+                  <svg class="career-logo">
+                      <use xlink:href="#{{ post.logo }}">
+                      </use>
+                  </svg>
                 </a>
               </div>
-              <!-- div style="clear:both;" -->
           </div>
 
-          <div class="post-content">
-            {{ post.content }}
+          <div class="post-content .rTable">
+              <div class="rTableRow">
+                <div class="rTableCell column-header">Time period:</div>
+                <div class="rTableCell">{{ post.time_period }}</div>
+              </div>
+              <div class="rTableRow">
+                <div class="rTableCell column-header">Position:</div>
+                <div class="rTableCell">{{ post.position }}</div>
+              </div>
+              <div class="rTableRow">
+                <div class="rTableCell column-header">Description:</div>
+                <div class="rTableCell job-description">{{ post.content}}</div>
+              </div>
           </div>
 
       </div>

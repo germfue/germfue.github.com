@@ -3,6 +3,12 @@ layout: career
 title: Carfax
 company_site: https://www.carfax.eu
 logo: icon-carfax
+position: Software Developer
+time_period: March 2010 - November 2011
 ---
 
-here I describe what I did at Carfax
+I was responsible for the production infrastructure, including high availability and deployments.
+
+As part of my tasks, I had to develop a data-warehouse to let the Data Analysis Team fully operate under the timing constraints they had. We were finally able to process and cross information from all our sources and regarding all the European countries we have data from.
+
+I was also in charge of the data processing. When new data arrived, I had to parse it and make it available so that we could generate vehicle reports and it could be analyzed. I also developed tools to assist internal processes and to automatically retrieve the data files from many origins: web service, ftp, web scraper...
