@@ -1,0 +1,41 @@
+---
+layout: page
+title: Projects
+permalink: /projects/
+---
+
+<div class="home">
+
+  <div class="posts card">
+      <div class="card-content white-text">
+          <div class="card-title company-header">
+              <div class="company-name">openbsd-appliance</div>
+              <div class="company-logo">
+                <a data-title="{{ post.title }}" href="{{ post.company_site}}" target="_blank">
+                  <svg class="career-logo">
+                      <use xlink:href="#{{ post.logo }}">
+                      </use>
+                  </svg>
+                </a>
+              </div>
+          </div>
+
+          <div class="post-content .rTable">
+              <div class="rTableRow">
+                <div class="rTableCell column-header">Time period:</div>
+                <div class="rTableCell">{{ post.time_period }}</div>
+              </div>
+              <div class="rTableRow">
+                <div class="rTableCell column-header">Position:</div>
+                <div class="rTableCell">{{ post.position }}</div>
+              </div>
+              <div class="rTableRow">
+                <div class="rTableCell column-header">Description:</div>
+                <div class="rTableCell job-description">{{ post.content}}</div>
+              </div>
+          </div>
+
+      </div>
+   </div>
+
+</div>
