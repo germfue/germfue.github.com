@@ -42,3 +42,15 @@ Add this to vimrc for default configuration:
     " Close vim if NERD Tree is the only window open
     autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
+# Salt-vim (https://github.com/saltstack/salt-vim)
+
+Download bundle:
+
+    $ git clone https://github.com/saltstack/salt-vim.git ~/.vim/bundle/salt-vim
+
+Check that this is in .vimrc:
+
+    syntax on
+    set nocompatible
+    filetype plugin indent on
+
