@@ -37,8 +37,6 @@ GEM
     rb-fsevent (0.9.8)
     rb-inotify (0.9.7)
       ffi (>= 0.5.0)
-    rb-kqueue (0.2.4)
-      ffi (>= 0.5.0)
     rouge (1.11.1)
     safe_yaml (1.0.4)
     sass (3.4.23)
@@ -50,10 +48,9 @@ DEPENDENCIES
   jekyll (= 3.3.1)
   jekyll-feed (~> 0.6)
   minima (~> 2.0)
-  rb-kqueue (>= 0.2)
 
 RUBY VERSION
-   ruby 2.2.6p396
+   ruby 2.3.3p222
 
 BUNDLED WITH
-   1.13.7
+   1.14.3
