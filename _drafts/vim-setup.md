@@ -56,8 +56,7 @@ Check that this is in .vimrc:
 
 # Python-mode
 
-    cd ~/.vim/bundle
-    git clone https://github.com/klen/python-mode.git
+    git clone https://github.com/klen/python-mode.git ~/.vim/bundle/python-mode
 
 Check that this is in .vimrc:
 
