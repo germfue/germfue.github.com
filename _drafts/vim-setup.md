@@ -6,7 +6,7 @@ categories: development ide vim
 ---
 I use [Vim](http://www.vim.org) on a daily basis as a development environment. The reasons for it are simple, I feel comfortable with it and the simple interface let's me concentrate better on the task at hand.
 
-Here you will find the instructions I followed for the setup and my [vimrc](https://raw.githubusercontent.com/germfue/dotfiles/master/.vimrc) file for completeness.
+Here you will find the instructions I followed for the setup and my [vimrc](https://raw.githubusercontent.com/germfue/germfue.github.com/master/dotfiles/.vimrc) file for completeness.
 
 # `runtimepath` management with vim-pathogen
 
