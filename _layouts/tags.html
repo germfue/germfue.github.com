@@ -3,9 +3,9 @@ layout: default
 ---
 
 {% capture var %}{{ page.url | remove: 'tags' | remove: '/' | replace: '%20' , ' ' }}{% endcapture %}
-<section id='blog'>
+<section id='tags'>
    <div class='container'>
-      <section class='wrapper articles'>
+      <section class='wrapper tags'>
          <header class='header'>
             <h3 class='title'>Posts Tagged “{{ var }}”</h3>
          </header>
