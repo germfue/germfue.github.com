@@ -1,0 +1,45 @@
+---
+layout: default
+title: career
+priority: 0.8
+---
+
+<section id='career'>
+   <div class='container'>
+      <section class='wrapper'>
+         <header class='header'>
+            <h3 class='title'>Summary</h3>
+         </header>
+         <section class='body'>
+            <p>{{ site.data.settings.career }}</p>
+         </section>
+      </section>
+      
+      {% for career in site.categories.career %}
+      <section class='wrapper career-article'>
+         <header class='header'>
+            <a href='{{ site.baseurl }}{{ career.url }}'><h3 class='title'>{{ career.title }}</h3></a>
+            <a class='logo' href='{{ career.company_site }}' data-title='{{ career.title }}' target='_blank'>
+               {% include company-logo/{{ career.logo }}.html %}
+            </a>
+         </header>
+         <section class='body'>
+            <table>
+               <tr>
+                  <td>Time Period:</td>
+                  <td>{{ career.time_period }}</td>
+               </tr>
+               <tr>
+                  <td>Position:</td>
+                  <td>{{ career.position }}</td>
+               </tr>
+               <tr>
+                  <td>Description:</td>
+                  <td>{{ career.content }}</td>
+               </tr>
+            </table>
+         </section>
+      </section>
+      {% endfor %}
+   </div>
+</section>

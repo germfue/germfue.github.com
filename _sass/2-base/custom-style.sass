@@ -1,0 +1,149 @@
+// html
+// --body#main
+// ----header
+// ----main#site-main
+// ------section name
+// --------.container
+// ----------.wrapper
+// ------------.header
+// --------------.title
+// ------------.body
+// ----footer
+
+/*---------------------*/
+/* Style for main body */
+/*---------------------*/
+#main
+   background:
+      image: url('../img/bg.jpg')
+      color: transparent
+      position: center top
+      repeat: repeat-y
+      size: 2000px auto
+
+   &:before
+      content: ''
+      +position(fixed, 0px 0px 0px 0px)
+      +background(linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 50%, #37474F)) // gradient color you see in the bottom of website      
+      
+/*---------------------------*/
+/* Style for class site-main */
+/*---------------------------*/
+#site-main
+   overflow: hidden
+   z-index: 1
+   +position(relative)
+   +display(flex)
+   +flex-direction(column)
+      
+   > *      
+      overflow: hidden
+
+/*---------------------------*/
+/* Style for class container */
+/*---------------------------*/
+.container
+   +position(relative)
+   overflow: hidden
+   padding: 0px .6rem
+   margin-left: auto
+   margin-right: auto     
+   
+   @media screen and (min-width: 768px)
+      padding: 0px 1.25rem
+      max-width: 750px
+
+   @media screen and (min-width: 992px)
+      max-width: 980px   
+
+/*-------------------------*/
+/* Style for class wrapper */
+/*-------------------------*/
+.wrapper
+   margin-bottom: .6rem
+   border-radius: 3px
+   padding: 1rem
+   background-color: $color-main
+   
+   @media screen and (min-width: 768px)
+      margin-bottom: 1.24rem
+      padding: 1.3rem
+   
+   .header
+      color: $text-color-alt
+      padding-bottom: .7rem
+      border-bottom: 1px solid $color-alt
+      +display(block)
+         
+      @media screen and (min-width: 550px)         
+         +display(flex)
+         +justify-content(space-between)
+         +align-items(center)
+            
+      > *
+         +display(block)
+
+      .title
+         color: $text-color-alt
+         margin: 0px
+            
+         svg
+            fill: $color-alt
+            +size(30px)
+            +display(inline-block)  
+               
+      .date
+         min-width: 100px
+         +display(inline-block)
+         margin-top: .5rem      
+            
+      .logo
+         margin: .5rem 0px 0px
+         
+         svg
+            +size(auto 100%)
+            fill: $brand-color 
+            +transition-duration(.2s)
+            
+            &:hover
+               fill: darken($brand-color, 15) 
+      
+         @media screen and (min-width: 550px)
+            margin: 0px
+
+   .body
+      padding: .8rem 0px 0px   
+         
+      p
+         line-height: 1.6
+   
+/*------*/
+/* Misc */   
+/*------*/
+code 
+   +display(block)
+   padding: .2rem .5rem
+   margin: .2rem
+   font-size: 90%
+   white-space: nowrap
+   background: #F1F1F1
+   border: 1px solid #E1E1E1
+   border-radius: 4px 
+   white-space: pre-wrap       /* css-3 */
+   white-space: -moz-pre-wrap  /* Mozilla, since 1999 */
+   white-space: -pre-wrap      /* Opera 4-6 */
+   white-space: -o-pre-wrap    /* Opera 7 */
+   word-wrap: break-word       /* Internet Explorer 5.5+ */
+   
+   @media screen and (min-width: 992px)
+      +display(inline)
+      margin: 0px .2rem
+
+pre > code 
+   display: block
+   padding: 1rem 1.5rem
+   white-space: pre-wrap       /* css-3 */
+   white-space: -moz-pre-wrap  /* Mozilla, since 1999 */
+   white-space: -pre-wrap      /* Opera 4-6 */
+   white-space: -o-pre-wrap    /* Opera 7 */
+   word-wrap: break-word       /* Internet Explorer 5.5+ */

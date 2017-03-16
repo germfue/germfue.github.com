@@ -1,0 +1,68 @@
+#nav
+   .nav-container
+      padding-top: 1.2rem
+      padding-bottom: .6rem
+      @extend .container
+      
+      .nav-flex
+         background-color: $color-main
+         border: 1px solid $color-alt
+         border-radius: 3px
+         height: 43px
+            
+         .nav-item
+            padding: 0.5rem 0.8125rem
+            text-transform: uppercase
+            color: $text-color-alt
+            float: left
+            height: 100%
+            font-size: 1.125rem
+            +position(relative)
+            
+            &:hover:after
+               content: ''
+               +position(absolute, 0px null null 50%)
+               margin-left: -5px
+               border: 
+                  width: 5px 5px 0px 5px
+                  style: solid
+                  color: lighten($color-alt, 25) transparent
+            
+         .home
+            background-color: $color-alt
+            padding-top: .4rem
+            
+            svg
+               fill: #fff
+               +size(1.25rem auto)            
+               vertical-align: middle
+               +display(inline-block)
+               
+            &:hover:after
+               opacity: 0
+            
+         .current               
+            &:hover:after
+               @extend .current:after
+               
+            &:after
+               content: ''
+               +position(absolute, 0px null null 50%)
+               margin-left: -6px
+               border: 
+                  width: 6px 6px 0px 6px
+                  style: solid
+                  color: $color-alt transparent
+               
+               
+@media screen and (min-width: 768px)
+   #nav
+      .nav-container
+         padding-top: .8rem
+         padding-bottom: .8rem
+                  
+@media screen and (min-width: 992px)
+   #nav
+      .nav-container
+         padding-top: 1.25rem
+         padding-bottom: 1.25rem

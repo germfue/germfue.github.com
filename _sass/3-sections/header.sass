@@ -1,0 +1,129 @@
+/*------------------*/
+/* Style for header */
+/*------------------*/
+#header
+   .header-container
+      @extend .container
+      padding-top: 1rem
+      
+      .wrapper-flex
+         +display(block)
+         text-align: center
+         
+         .badge
+            margin: 0px
+            +display(inline-block)
+
+            img         
+               border: 6px solid $color-main
+               +size(135px)
+
+         .text
+            +align-self(center)
+            +flex-grow(1)
+            
+            .site-title
+               +display(block)
+               padding: 0px .5rem
+               margin: .7rem 0px 1rem                 
+               border: 2px solid $color-alt
+               background-color: $color-main
+
+               h1
+                  color: $color-alt
+                  overflow: hidden
+                  +position(relative)
+                  padding: .4rem 0px
+                  letter-spacing: 0px
+                  margin: 0px
+                  z-index: 1
+                  font:
+                     size: 1.5rem
+                     weight: bold   
+
+            .social
+               +display(flex)
+               +justify-content(center)
+
+               .social-item
+                  +display(block)
+                  +position(relative)
+                  margin: 0px .6rem
+                  +transition-duration(.2s)
+                  +transition-timing-function(ease-out)
+
+                  &:before
+                     content: ''
+                     +size(3px)
+                     border-radius: 50%
+                     background-color: $color-main
+                     +position(absolute, 0px null null 0px)
+
+                  &:after
+                     content: ''
+                     +size(3px)
+                     border-radius: 50%
+                     background-color: $color-main
+                     +position(absolute, null 0px 0px null)
+                  
+                  &:hover
+                     +transform(scale(1.1))
+                  
+                  .helper        
+                     +size(32px)         
+                     +display(block)
+                     text-align: center
+                     border-radius: 50%
+                     background-color: $color-main
+                     white-space: nowrap
+                     
+                     &:before
+                        content: ''
+                        height: 100%
+                        +display(inline-block)
+                        vertical-align: middle
+
+                     svg
+                        +size(16px)
+                        +display(inline-block)
+                        vertical-align: middle
+                        margin: 0px 0px 0px -3px
+                        fill: $color-alt
+                        +transition(all .1s ease-out 0s)
+                           
+@media screen and (min-width: 470px)   
+   #header
+      .header-container
+         .wrapper-flex
+            +display(flex)
+            text-align: left
+            
+            .badge
+               margin-right: .5rem
+
+            .text .social
+               +justify-content(flex-start)
+
+               .social-item
+                  margin: 0px 1rem 0px 0px
+
+@media screen and (min-width: 550px)
+   #header
+      .header-container
+         .wrapper-flex
+            .badge
+               margin-right: .7rem
+               
+               img
+                  +size(175px)
+               
+            .text .site-title h1
+               font-size: 2rem
+                  
+@media screen and (min-width: 768px)
+   #header .header-container
+         
+@media screen and (min-width: 768px)
+   #header .header-container
+      padding-top: 1.25rem
+   

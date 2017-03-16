@@ -1,22 +1,9 @@
-<!DOCTYPE html>
-<html>
+{% include header.html %}
+{% include icons.html %}
+{% include nav.html %}
 
-  {% include head.html %}
+<main id='site-main'>
+{{content}}
+</main>
 
-  <body>
-      {% include icons.html %}
-
-      <div class="outer">
-        {% include header.html %}
-
-        <div class="page-content">
-          <div class="wrapper">
-            {{ content }}
-          </div>
-        </div>
-
-        {% include footer.html %}
-      </div>
-  </body>
-  
-</html>
+{% include footer.html %}

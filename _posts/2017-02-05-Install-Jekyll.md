@@ -2,7 +2,10 @@
 layout: post
 title:  "Jekyll diary: Bootstrapping"
 published: true
-categories: blog jekyll
+tags: 
+ - blog
+ - jekyll
+priority: 0.8
 ---
 
 I tend to forget how to bootstrap my Jekyll environment. These are the basic steps I follow to use Jekyll locally.

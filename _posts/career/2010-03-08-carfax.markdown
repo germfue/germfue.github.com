@@ -2,9 +2,12 @@
 layout: career
 title: Carfax
 company_site: https://www.carfax.eu
-logo: icon-carfax
+logo: carfax
 position: Software Developer
 time_period: March 2010 - November 2011
+category: career
+permalink: /career/:title
+priority: 0.8
 ---
 
 I was responsible for the production infrastructure, including high availability and deployments.

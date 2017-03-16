@@ -2,7 +2,12 @@
 layout: career
 title: Tecsidel
 company_site: https://www.tecsidel.com
-logo: icon-tecsidel
+logo: tecsidel
+category: career
+tags:
+ - github
+permalink: /career/:title
+priority: 0.8
 ---
 
 here I describe what I did at Tecsidel

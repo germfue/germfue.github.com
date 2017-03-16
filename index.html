@@ -1,30 +1,53 @@
 ---
 layout: default
+priority: 0.8
 ---
 
-<div class="home">
-<!--
- <div class="top card">
-    <p class="description">{{ site.description }}</p>
-    <a href="about" class="btn">Read More</a>
-  </div>
--->
-  <div class="posts card">
-      <div class="card-content white-text">
-      <span class="card-title">Posts</span>
-
-      <ul class="post-list">
-        {% for post in site.posts %}
-            {% if post.layout == "post" %}
-          <li>
-            <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-            <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>            
-          </li>
-          {% endif %}
-        {% endfor %}
-      </ul>
-
-      </div>
+<section id='about'>
+   <div class='container'>
+      <section class='wrapper'>
+         <header class='header'>
+            <h3 class='title'>About me</h3>
+         </header>
+         <section class='body'>
+            <p>{{ site.data.settings.about }}</p>
+         </section>
+      </section>
    </div>
+</section>
 
-</div>
+<section id='articles'>   
+   <div class='container'>
+      <section class='wrapper articles'>
+         <header class='header'>
+            <h3 class='title'>Posts</h3>
+         </header>
+         <section class='body'>
+            <!-- This loops through the paginated posts -->
+            {% for post in paginator.posts %}
+            <a href='{{site.baseurl}}{{post.url}}'>
+               <article class='article'>
+                  <h4 class='title'>{{post.title}}</h4>
+                  <span class='date'>{{ post.date | date: "%-d %B, %Y" }}</span>
+               </article>
+            </a>
+            {% endfor %}
+
+            <!-- Pagination links -->
+            <div class="pagination-flex">
+              {% if paginator.previous_page %}
+                <a href="{{ site.baseurl }}{{ paginator.previous_page_path }}" class="previous">&larr; Previous</a>
+              {% else %}
+                <span class="previous">&larr; Previous</span>
+              {% endif %}
+              <span class="page_number">{{ paginator.page }} / {{ paginator.total_pages }}</span>
+              {% if paginator.next_page %}
+                <a href="{{ site.baseurl }}{{ paginator.next_page_path }}" class="next">Next &rarr;</a>
+              {% else %}
+                <span class="next ">Next &rarr;</span>
+              {% endif %}
+            </div>
+         </section>
+      </section>   
+   </div>
+</section>

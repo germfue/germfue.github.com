@@ -1,0 +1,18 @@
+/*------------------*/
+/* Style for footer */
+/*------------------*/
+#footer
+   .copyright
+      text-align: center
+      
+      p
+         @extend .smaller
+         color: $color-main
+         text-transform: uppercase
+         +display(inline-block)
+         
+         &:hover
+            border-bottom: 1px solid rgba($color-main, .5)
+         
+         @media screen and (max-width: 768px)
+            margin-bottom: .4rem

@@ -2,26 +2,33 @@
 layout: default
 ---
 
-<div class="home">
-
-  <div class="posts card">
-      <div class="card-content white-text">
-          <span class="card-title">
-              <div class="company-name">{{ page.title }}</div>
-              <div class="company-logo">
-                  <a data-title="{{ page.title }}" href="{{ page.company_site }}" target="_blank">
-                      <svg class="career-logo">
-                          <use xlink:href="#{{ page.logo }}"></use>
-                      </svg>
-                </a>
-              </div>
-          </span>
-
-          <div class="post-content">
-            {{ content }}
-          </div>
-
-      </div>
+<section id='career'>
+   <div class='container'>
+      <article class='wrapper career-post'>
+         <header class='header'>
+            <h1 class='title gigantic'>{{page.title}}</h1>         
+            <a class='logo' href='{{ site.baseurl }}{{ page.company_site }}' data-title='{{ page.title }}' target='_blank'>
+               {% include company-logo/{{ page.logo }}.html %}
+            </a>
+         </header>
+         <section class='body'>
+         {{content}}
+         </section>
+      </article>   
+      
+      <section class='wrapper tags'>
+         <header class='header'>
+            <h3 class='title'>{% include icons/tags.html %}Tags</h3>
+         </header>
+         <ul class='body'>     
+         {% if page.tags.size != 0 %}
+            {% for tags in page.tags %}
+               {% include tag-generator.html tag=tags %}
+            {% endfor %}
+         {% else %}
+             <li class='no-tags'>No tags available in this post</li>
+         {% endif %}            
+         </ul>
+      </section>      
    </div>
-
-</div>
+</section>      

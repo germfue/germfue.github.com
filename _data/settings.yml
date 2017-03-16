@@ -1,0 +1,22 @@
+# Site Settings
+lang: 'en'
+author: 'Germán Fuentes Capella'
+title: 'Germán Fuentes Capella'
+subtitle: ''
+description: ''
+keywords: ''
+
+# Site Content
+socials:
+- {name: linkedin, link: 'http://linkedin.com/in/germanfuentescapella'}
+- {name: github, link: 'https://github.com/germfue'}
+- {name: rss, link: '/feed.xml'}
+- {name: pgp, link: 'http://pgp.mit.edu/pks/lookup?op=vindex&search=0xAC7ABB37BF75CA8B534FA2ADDEF46152A00CA7DD'}
+
+menu:
+- {name: 'blog'}
+- {name: 'career'}
+
+about: 'Lorem ipsum dolor s  it amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+
+career: 'Always ready to face new challenges, I had to deal all over my career with quite different projects, from pure consulting, to datawarehousing, web development in Python and Java and now E-commerce.My last discovery, in 2011, was the payment services industry. This market is heavily influenced by the enormous number of players, each one with a different perspective on how systems should communicate, which standards they should follow and which workflows should guide shoppers and merchants through the checkout process.'
