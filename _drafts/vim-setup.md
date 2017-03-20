@@ -4,9 +4,31 @@ title:  "Development on Vim"
 published: true
 categories: development ide vim
 ---
-I use [Vim](http://www.vim.org) on a daily basis as a development environment. The reasons for it are simple, I feel comfortable with it and the simple interface let's me concentrate better on the task at hand.
+I use [Vim](http://www.vim.org) on a daily basis as a development environment. The reasons for it are simple, I feel
+comfortable with it and the simple interface let's me concentrate better on the task at hand.
 
-Here you will find the instructions I followed for the setup and my [vimrc](https://raw.githubusercontent.com/germfue/germfue.github.com/master/dotfiles/.vimrc) file for completeness.
+Here you will find the instructions I followed for the setup and my
+[vimrc](https://raw.githubusercontent.com/germfue/germfue.github.com/master/dotfiles/.vimrc) file for completeness.
+
+# Relative line numbers in visual mode
+I got this idea from
+[Jeff's Blog](http://jeffkreeftmeijer.com/2012/relative-line-numbers-in-vim-for-super-fast-movement) (Thanks Jeff!)
+ Using relative line numbers in visual mode speeds up some typical operations like calculating how many rows should be
+copied or deleted
+
+:set relativenumber
+autocmd InsertEnter * :set number norelativenumber
+autocmd InsertLeave * :set nonumber relativenumber 
+
+# Mark the 120 characters limit
+
+This is an easy one, I like to limit my code to 120 chars wide maximum
+
+    if exists('+colorcolumn')
+        set colorcolumn=120
+    else
+        au BufWinEnter * let w:m2=matchadd('ErrorMsg', '\%>120v.\+', -1)
+    endif
 
 # `runtimepath` management with vim-pathogen
 
@@ -41,6 +63,9 @@ Add this to vimrc for default configuration:
 
     " Close vim if NERD Tree is the only window open
     autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+
+If you need help with the shortcuts, you can find the documentation
+[here](https://github.com/scrooloose/nerdtree/blob/master/doc/NERD_tree.txt)
 
 # Salt-vim (https://github.com/saltstack/salt-vim)
 

@@ -109,9 +109,6 @@ endif
 :set shiftwidth=4
 :set expandtab
 
-" line numbering
-:set number
-
 " Configure NERD Tree
 " This is the first line
 autocmd StdinReadPre * let s:std_in=1
@@ -146,3 +143,17 @@ let g:syntastic_auto_loc_list = 0
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 " let g:syntastic_python_python_exe = 'python3'
+
+
+" Relative vs absolute line numbers
+:set relativenumber
+autocmd InsertEnter * :set number norelativenumber
+autocmd InsertLeave * :set nonumber relativenumber
+
+
+" Marking 120 characters limit in files
+if exists('+colorcolumn')
+  set colorcolumn=120
+else
+  au BufWinEnter * let w:m2=matchadd('ErrorMsg', '\%>120v.\+', -1)
+endif
