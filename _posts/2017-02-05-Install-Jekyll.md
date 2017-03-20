@@ -3,7 +3,7 @@ layout: post
 title:  "Jekyll diary: Bootstrapping"
 published: true
 tags: 
- - jekyll
+ - blogging
 priority: 0.8
 ---
 
