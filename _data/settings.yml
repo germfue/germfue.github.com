@@ -16,6 +16,7 @@ socials:
 menu:
 - {name: 'blog'}
 - {name: 'projects'}
+- {name: 'about'}
 #- {name: 'career'}
 
 pressconduit: "Do you want to send me a private and anonymous message? It's just coming soon..."
