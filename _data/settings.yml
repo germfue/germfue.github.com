@@ -15,7 +15,6 @@ socials:
 
 menu:
 - {name: 'blog'}
-- {name: 'projects'}
 - {name: 'about'}
 #- {name: 'career'}
 
