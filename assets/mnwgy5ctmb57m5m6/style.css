@@ -1,0 +1,66 @@
+body
+{
+   background-image: url('http://mnwgy5ctmb57m5m6.onion/s/bg.jpg');
+   background-repeat: no-repeat;
+   background-position: top center;
+   background-attachment: fixed;
+}   
+#HeaderBox
+{
+   background-color: transparent;
+   border: none;
+   padding-bottom: 15px;
+}
+#HeaderBoxContent
+{
+   background-color: #fff;
+   padding: 0em;
+}
+#PageTitle
+{
+   color: #EF6C00;
+   font-size: 50px;
+}
+#TitleBox
+{
+    float: left;
+}
+#LoginFormBox
+{
+   color: #EF6C00;
+}
+#ContentBox
+{
+   background-color: #fff;
+   color: #EF6C00;
+}
+#NodeIntroPresentation
+{
+   border-bottom: 1px solid #EF6C00;
+   text-align: left;
+   color: #EF6C00;
+}
+#SubmissionTabsContentBox
+{
+   padding-top: 0px;
+}
+#StepTitle
+{
+   border-bottom: 1px solid #EF6C00;
+}
+#SubmitButton
+{
+   background-color: #EF6C00;
+   color: #fff;
+}
+#ReceiptButton
+{
+   background-color: #EF6C00;
+   border-color: #EF6C00;
+   color: #fff;
+}
+#AttributionClause
+{
+   background-color: #fff;
+   color: #EF6C00;
+}
