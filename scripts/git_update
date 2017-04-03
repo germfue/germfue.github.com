@@ -1,0 +1,15 @@
+#!/bin/bash
+
+for dotgit in $( find $HOME -name .git ); do
+  cd $dotgit/..
+
+  echo -
+  echo --
+  echo ---
+  echo $PWD
+  echo ---
+
+  git pull
+
+  echo
+done
