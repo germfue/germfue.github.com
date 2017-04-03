@@ -1,0 +1,50 @@
+#!/bin/bash
+# I do not want to push those projects that are under $HOME/.*
+# like $HOME/.vim/bundle/Zenburn as these are plugins in read-only
+# mode
+
+for dotgit in $( find $HOME -name .git ); do
+  projectdir=`dirname $dotgit`
+  cd $projectdir
+
+  case `dirname $projectdir` in
+    *.*)
+      echo "[Skipping!]" $projectdir
+      ;;
+    *)
+      echo -
+      echo --
+      echo ---
+      echo $PWD
+      echo ---
+
+      status=$( git status --porcelain)
+      if [ -z "$status" ];
+      then
+        case `git push --dry-run --porcelain` in
+          *=*)
+            echo Up to date
+            ;;
+          *)
+            git push
+            ;;
+        esac
+      else
+        case $status in
+          *'??'*)
+            echo There are uncommitted files!
+            git status --porcelain
+            ;;
+          *'[AMDRCU]  '*)
+            echo There are uncommitted files!
+            git status --porcelain
+            ;;
+          *)
+            echo Status not understood!
+            ;;
+        esac
+      fi
+      echo
+      ;;
+  esac
+done
