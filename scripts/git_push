@@ -30,19 +30,8 @@ for dotgit in $( find $HOME -name .git ); do
             ;;
         esac
       else
-        case $status in
-          *'??'*)
-            echo There are uncommitted files!
-            git status --porcelain
-            ;;
-          *'[AMDRCU]  '*)
-            echo There are uncommitted files!
-            git status --porcelain
-            ;;
-          *)
-            echo Status not understood!
-            ;;
-        esac
+        echo There are uncommitted files!
+        git status --porcelain
       fi
       echo
       ;;
