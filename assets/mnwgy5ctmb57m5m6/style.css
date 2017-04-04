@@ -9,7 +9,12 @@ body
 {
    background-color: transparent;
    border: none;
+   padding-top: 15px;
    padding-bottom: 15px;
+}
+#LogoBox
+{
+   height: 5em;
 }
 #HeaderBoxContent
 {
@@ -23,11 +28,17 @@ body
 }
 #TitleBox
 {
-    float: left;
+   float: left;
+   height: auto;
 }
 #LoginFormBox
 {
    color: #EF6C00;
+   padding: 0px;
+}
+#UserBox
+{
+   height: auto;
 }
 #ContentBox
 {
@@ -63,4 +74,40 @@ body
 {
    background-color: #fff;
    color: #EF6C00;
+}
+#FooterBox
+{
+   padding: 0px;
+   border: 0px;
+   background-color: #fff;
+}
+button.btn.btn-primary
+{
+   background-color: #EF6C00;
+   border-color: #EF6C00;
+   color: #fff;
+}
+button.btn.btn-primary:hover
+{
+   background-color: #EF6C00;
+   border-color: #EF6C00;
+   color: #fff;
+}
+button.btn.btn-primary:active
+{
+   background-color: #EF6C00;
+   border-color: #EF6C00;
+   color: #fff;
+}
+#fileupload
+{
+   background-color: #EF6C00;
+   border-color: #EF6C00;
+   color: #fff;
+}
+#comment-action-send
+{
+   background-color: #EF6C00;
+   border-color: #EF6C00;
+   color: #fff;
 }
