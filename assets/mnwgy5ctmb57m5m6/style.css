@@ -111,3 +111,11 @@ button.btn.btn-primary:active
    border-color: #EF6C00;
    color: #fff;
 }
+#StepDescription
+{
+   padding-bottom: 15px;
+}
+#NodeIntroDescription
+{
+   padding-top: 15px;
+}
