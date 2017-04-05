@@ -8,9 +8,12 @@ priority: 0.8
       <section class='wrapper'>
          <header class='header'>
             <h3 class='title'>Press Conduit</h3>
+            <div class='project-logo'>
+                {% include icons/pressconduit.html %}
+            </div>
          </header>
          <section class='body'>
-            <p>{{ site.data.settings.pressconduit }}</p>
+            {% include pressconduit.html %}
          </section>
       </section>
    </div>
