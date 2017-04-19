@@ -3,7 +3,7 @@
 # like $HOME/.vim/bundle/Zenburn as these are plugins in read-only
 # mode
 
-for dotgit in $( find $HOME -name .git ); do
+for dotgit in $( find $HOME -path "$HOME/Tresor*" -prune -o -name .git | grep git); do
   projectdir=`dirname $dotgit`
   cd $projectdir
 
