@@ -1,6 +1,6 @@
 #!/bin/bash
 
-for dotgit in $( find $HOME -name .git ); do
+for dotgit in $( find $HOME -path "$HOME/Tresor*" -prune -o -name .git | grep git); do
   cd $dotgit/..
 
   echo -
