@@ -109,6 +109,10 @@ Check that this is in .vimrc:
     let g:syntastic_auto_loc_list = 0
     let g:syntastic_check_on_open = 1
     let g:syntastic_check_on_wq = 0
+    let g:syntastic_python_python_exe = 'python3'
+    let g:syntastic_python_checkers=['flake8']
+    let g:syntastic_python_flake8_args='--max-line-length=120'
+    let g:syntastic_python_flake8_exec = 'python3'
 
 # Autocomplete with Jedi
 
