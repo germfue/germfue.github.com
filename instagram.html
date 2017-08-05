@@ -5,17 +5,20 @@ priority: 0.8
 ---
 
 <section id='articles'>   
-   <div class='container'>
+   <div class='piccontainer'>
       <div id="instafeed" />
    </div>
 </section>
 
 <script src='{{site.baseurl}}/assets/js/instafeed-1.4.1.js'></script>
+{% assign img = '{{image}}' %}
+{% assign lnk = '{{link}}' %}
 <script type="text/javascript">
     var feed = new Instafeed({get: 'user',
                               userId: '5799907461',
                               clientId: '87732c67d8f64490b64a57bb7abd39a2',
-                              accessToken: '5799907461.87732c6.25490e58a4cc41f68244da7906400d0b'
+                              accessToken: '5799907461.87732c6.25490e58a4cc41f68244da7906400d0b',
+                              template: '<a class="instapic" href="{{lnk}}"><img src="{{img}}" /></a>'
                               });
     feed.run();
 </script>
