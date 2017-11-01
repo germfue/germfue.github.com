@@ -1,0 +1,2 @@
+
+€: Option + Shift + 2
