@@ -1,5 +1,6 @@
 
 €: Option + Shift + 2
+ñ: Option + n, n
 
 Finder:
 New Folder: Command + Shift + n
