@@ -1,13 +1,13 @@
 ---
 layout: post
-title:  "Development on Vim"
+title:  "Vim: Basic Setup"
 published: true
-categories: development ide vim
+categories: vim
 ---
-I use [Vim](http://www.vim.org) on a daily basis as a development environment. The reasons for it are simple, I feel
+I use [Vim](http://www.vim.org) as my default editor. The reasons for it are simple, I feel
 comfortable with it and the simple interface let's me concentrate better on the task at hand.
 
-Here you will find the instructions I followed for the setup and my
+In this post I will introduce the main plugins I use and how to manually set them up. Check out my
 [vimrc](https://raw.githubusercontent.com/germfue/germfue.github.com/master/dotfiles/.vimrc) file for completeness.
 
 # Relative line numbers in visual mode
@@ -41,9 +41,13 @@ Add this to vimrc:
 
     execute pathogen#infect()
 
+Now it is time we start loading some plugins.
+
 # Filesystem tree with [NERD Tree](https://github.com/scrooloose/nerdtree)
 
-Download bundle:
+This is one of my favourite ones. You can easily interact with the files in project by using this file tree.
+
+To use it, download bundle:
 
     $ git clone https://github.com/scrooloose/nerdtree.git ~/.vim/bundle/nerdtree
 
@@ -69,6 +73,9 @@ If you need help with the shortcuts, you can find the documentation
 
 # Salt-vim (https://github.com/saltstack/salt-vim)
 
+I use [SaltStack](https://saltstack.com) to manage my servers. This plugin comes handy when editing the configuration
+files.
+
 Download bundle:
 
     $ git clone https://github.com/saltstack/salt-vim.git ~/.vim/bundle/salt-vim
@@ -80,6 +87,8 @@ Check that this is in .vimrc:
     filetype plugin indent on
 
 # Colors
+
+These 2 color schemes are my favourites :)
 
     git clone https://github.com/altercation/vim-colors-solarized.git ~/.vim/bundle/vim-colors-solarized
     " curl -LSso ~/.vim/autoload/pathogen.vim https://raw.githubusercontent.com/tpope/vim-pathogen/master/autoload/pathogen.vim
@@ -96,6 +105,7 @@ Check that this is in .vimrc:
 
 # Syntastic
 
+If you use vim to edit code, this plugin will help you
     git clone https://github.com/vim-syntastic/syntastic.git ~/.vim/bundle/syntastic
 
 
@@ -112,9 +122,15 @@ Check that this is in .vimrc:
     let g:syntastic_python_python_exe = 'python3'
     let g:syntastic_python_checkers=['flake8']
     let g:syntastic_python_flake8_args='--max-line-length=120'
-    let g:syntastic_python_flake8_exec = 'python3'
+
+You will need to install flake8 in your system:
+
+    pip install flake8 # or for Python3
+    pip3 install flake8
 
 # Autocomplete with Jedi
+
+Isn't it easier to edit when you have autocomplete?
 
     git clone https://github.com/davidhalter/jedi-vim.git ~/.vim/bundle/jedi-vim
 
