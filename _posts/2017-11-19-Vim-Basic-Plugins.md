@@ -8,7 +8,7 @@ I use [Vim](http://www.vim.org) as my default editor. The reasons for it are sim
 comfortable with it and the simple interface let's me concentrate better on the task at hand.
 
 In this post I will introduce the main plugins I use and how to manually set them up. Check out my
-[vimrc](https://raw.githubusercontent.com/germfue/germfue.github.com/master/dotfiles/.vimrc) file for completeness.
+[vimrc](https://raw.githubusercontent.com/germfue/germfue.github.com/master/dotfiles/.vimrc-pathogen) file for completeness.
 
 # Relative line numbers in visual mode
 I got this idea from
