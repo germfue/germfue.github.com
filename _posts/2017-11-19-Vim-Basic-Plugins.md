@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Vim: Basic Setup"
+title:  "Vim: Basic Plugins"
 published: true
 categories: vim
 ---
