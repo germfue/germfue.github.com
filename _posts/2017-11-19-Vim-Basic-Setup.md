@@ -16,9 +16,9 @@ I got this idea from
  Using relative line numbers in visual mode speeds up some typical operations like calculating how many rows should be
 copied or deleted
 
-:set relativenumber
-autocmd InsertEnter * :set number norelativenumber
-autocmd InsertLeave * :set nonumber relativenumber 
+    :set relativenumber
+    autocmd InsertEnter * :set number norelativenumber
+    autocmd InsertLeave * :set nonumber relativenumber 
 
 # Mark the 120 characters limit
 
@@ -45,7 +45,7 @@ Now it is time we start loading some plugins.
 
 # Filesystem tree with [NERD Tree](https://github.com/scrooloose/nerdtree)
 
-This is one of my favourite ones. You can easily interact with the files in project by using this file tree.
+This is one of my favorite plugins. You can easily interact with the files in project by using this file tree.
 
 To use it, download bundle:
 
@@ -71,7 +71,7 @@ Add this to vimrc for default configuration:
 If you need help with the shortcuts, you can find the documentation
 [here](https://github.com/scrooloose/nerdtree/blob/master/doc/NERD_tree.txt)
 
-# Salt-vim (https://github.com/saltstack/salt-vim)
+# [Salt-vim](https://github.com/saltstack/salt-vim)
 
 I use [SaltStack](https://saltstack.com) to manage my servers. This plugin comes handy when editing the configuration
 files.
@@ -88,7 +88,7 @@ Check that this is in .vimrc:
 
 # Colors
 
-These 2 color schemes are my favourites :)
+These 2 color schemes are my favorites :)
 
     git clone https://github.com/altercation/vim-colors-solarized.git ~/.vim/bundle/vim-colors-solarized
     " curl -LSso ~/.vim/autoload/pathogen.vim https://raw.githubusercontent.com/tpope/vim-pathogen/master/autoload/pathogen.vim
@@ -106,6 +106,7 @@ Check that this is in .vimrc:
 # Syntastic
 
 If you use vim to edit code, this plugin will help you
+
     git clone https://github.com/vim-syntastic/syntastic.git ~/.vim/bundle/syntastic
 
 
@@ -128,9 +129,9 @@ You will need to install flake8 in your system:
     pip install flake8 # or for Python3
     pip3 install flake8
 
-# Autocomplete with Jedi
+# Auto-complete with Jedi
 
-Isn't it easier to edit when you have autocomplete?
+Isn't it easier to edit when you have auto-complete?
 
     git clone https://github.com/davidhalter/jedi-vim.git ~/.vim/bundle/jedi-vim
 
@@ -140,3 +141,6 @@ Isn't it easier to edit when you have autocomplete?
     pip install jedi
     rmdir jedi
     ln -s lib64/python2.7/site-packages/jedi jedi
+
+# Ready to go
+With these basic plugins I handle most of the tasks my every day's activities require. I hope they help you too!
