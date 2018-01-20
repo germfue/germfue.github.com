@@ -174,6 +174,9 @@ autocmd VimEnter * NERDTree
 " Close vim if NERD Tree is the only window open
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
+" Ignore *.pyc files
+let NERDTreeIgnore = ['\.pyc$', ]
+
 " Colors
 
 if has('gui_running')
