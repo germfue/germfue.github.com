@@ -2,6 +2,7 @@
 €: Option + Shift + 2
 ñ: Option + n, n
 ¿: Shift + Option + ?
+Delete forward: fn + delete
 
 Finder:
 New Folder: Command + Shift + n
