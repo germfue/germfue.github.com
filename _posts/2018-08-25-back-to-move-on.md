@@ -25,10 +25,10 @@ This time, I will share the details of a small project I was thinking about for 
 Since the acquisition of [Github](https://github.com/)
 by [Microsoft](https://www.microsoft.com),
 I am uncomfortable with the hosting of this blog. Another point of frustration is the use of Jekyll, which is clearly a
-good tool but it always make me feel like an outsider. I am not a big fan of Ruby and I guess that thought sticks in
+good tool but it always makes me feel like an outsider. I am not a big fan of Ruby and I guess that thought sticks in
 my mind. I guess it is time to address both topics!
 
-There are the objectives of my little exercise:
+These are the objectives of my little exercise:
 
 - Use a new static site generator: I'd like to give a try to [MkDocs](https://www.mkdocs.org)
 - Create new repository, probably in [Gitlab](https://gitlab.com) as they strongly support open source.
