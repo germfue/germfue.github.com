@@ -8,6 +8,8 @@ tags:
 - mkdocs
 - aws
 - s3
+- gitlab
+- github
 priority: 0.8
 ---
 # The return
